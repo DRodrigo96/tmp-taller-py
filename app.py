@@ -8,6 +8,7 @@ import joblib
 import pandas as pd
 # common
 import os
+import traceback
 # used defined
 from modules.utils import km_bpoints
 from modules.utils import BinEncoder
@@ -59,6 +60,7 @@ def home():
         result = int(BEST_MODEL.predict(new_data_row)[0])
     
     except:
+        traceback.print_exc()
         result = 'ERROR'
     
     # > output window
