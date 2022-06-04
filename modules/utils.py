@@ -10,6 +10,7 @@ from geopy import distance
 
 class percentPlot:
     
+    @classmethod
     def seaPlot(self, mydf, xvar, ytitle, *args, **kwargs):
         '''
         Plot de barras y porcentajes:
